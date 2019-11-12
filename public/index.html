@@ -21,7 +21,7 @@
   <div class="row">
       <div class="col-md-6">
           <h3><span class="glyphicon glyphicon-info-sign"></span> Just put some text in below and hit enter :) </h3>
-          <form id="oodle-form">
+          <form id="duh-form">
               <div class="input-group">
                   <!-- <span class="input-group-btn"><button type="reset" class="btn btn-default">reset</button></span> -->
                   <input type="text" class="form-control" id="duh">
@@ -52,7 +52,7 @@
         });
     }
 
-$( "#oodle-form" ).submit(function( event ) {
+$( "#duh-form" ).submit(function( event ) {
     if(!$('#duh').val()) return;
     originalValue = $('#duh').val();
     console.log(originalValue);
@@ -73,9 +73,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
-if(getUrlParameter('oodle') !== undefined) {
+if(getUrlParameter('duh') !== undefined) {
     $('#duh').val(getUrlParameter('duh'));
-    $( "#oodle-form" ).submit();
+    $( "#duh-form" ).submit();
 }
 </script>
 
